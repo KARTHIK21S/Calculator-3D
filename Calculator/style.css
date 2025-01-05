@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.2), -15px -15px 40px rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    width: 350px;
+}
+
+.screen {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#history {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+#output {
+    font-size: 36px;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:active {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.button:hover {
+    background-color: #d0d0d0;
+}
+
+.op__key {
+    background-color: #ff652f;
+    color: white;
+}
+
+.num__key {
+    background-color: #fff;
+    color: #333;
+}
+
+button#clear {
+    background-color: #f44336;
+    color: white;
+}
+
+button#backspace {
+    background-color: #ffa500;
+    color: white;
+}
